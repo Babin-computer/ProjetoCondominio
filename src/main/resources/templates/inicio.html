@@ -8,28 +8,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>ADM Condomínios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
     <!-- Barra de Menu -->
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Moradores</a>
-        <a href="#">Encomendas</a>
-        <a href="#">Reservas</a>
-        <a href="#">Visualizar Encomendas</a>
+        <div class="logo">CondoSystem</div>
+        <div class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="cadastrom.html">Moradores</a>
+        <a href="encomendas.html">Ver Encomendas</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="cadastroe.html">Cadastrar Encomendas</a>
     </nav>
 
     <!-- Container Principal -->
     <div class="container">
-        <h1>Bem-vindo ao seu condomínio!</h1>
-        <p>Escolha uma das opções abaixo para começar:</p>
+        <h1>Bem-vindo ao CondoSystem</h1>
+        <p>Gerencie facilmente as atividades do seu condomínio.</p>
 
         <!-- Botões -->
-        <a href="#" class="button">Cadastrar Morador</a>
-        <a href="#" class="button">Cadastrar Encomenda</a>
-        <a href="#" class="button">Visualizar Encomenda</a>
-        <a href="#" class="button">Reservar uma área de lazer</a>
+        <div class="button-group">
+            <a href="cadastrom.html" class="button"><i class="fas fa-user-plus"></i> Cadastrar Morador</a>
+            <a href="cadastroe.html" class="button"><i class="fas fa-box"></i> Cadastrar Encomenda</a>
+            <a href="encomendas.html" class="button"><i class="fas fa-search"></i> Visualizar Encomenda</a>
+            <a href="reservas.html" class="button"><i class="fas fa-calendar-alt"></i> Fazer Reserva</a>
+        </div>
     </div>
+
 
     <!-- Rodapé -->
     <footer>

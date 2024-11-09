@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+    </head>
+    <body>
+    <nav>
+        <div class="logo">CondoSystem</div>
+        <div class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="cadastrom.html">Moradores</a>
+        <a href="encomendas.html">Ver Encomendas</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="cadastroe.html">Cadastrar Encomendas</a>
+    </nav>
+
+    <!-- Formulário de Cadastro -->
+    <div class="container">
+        <h1>Cadastro de Encomenda</h1>
+        
+        <!-- Formulário para inserir dados -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="dataEntrega">Data de Entrega:</label>
+                <input type="date" id="dataEntrega" name="dataEntrega" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeMorador">Nome do Morador:</label>
+                <input type="text" id="nomeMorador" name="nomeMorador" required placeholder="Digite o nome do morador">
+            </div>
+
+            <div class="form-group">
+                <label for="apartamento">Apartamento:</label>
+                <input type="text" id="apartamento" name="apartamento" required placeholder="Digite o número do apartamento">
+            </div>
+
+            <!-- Botão para cadastrar -->
+            <button type="submit" class="button">Cadastrar Encomenda</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

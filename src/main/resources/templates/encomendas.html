@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+        <script <script src="static/script.js"></script>
+    </head>
+    <body>
+    <nav>
+        <div class="logo">CondoSystem</div>
+        <div class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="cadastrom.html">Moradores</a>
+        <a href="encomendas.html">Ver Encomendas</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="cadastroe.html">Cadastrar Encomendas</a>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <h1>Visualizar Encomendas</h1>
+
+        <!-- Campo de Busca -->
+        <div class="form-group">
+            <label for="busca">Buscar Encomenda:</label>
+            <input type="text" id="busca" onkeyup="buscarEncomenda()" placeholder="Pesquise por nome, apartamento ou data...">
+        </div>
+
+        <!-- Lista de Encomendas -->
+        <div class="lista-encomendas">
+            <div class="encomenda">
+                <p><strong>Nome do Morador:</strong> <span class="nomeMorador">João Silva</span></p>
+                <p><strong>Apartamento:</strong> <span class="apartamento">102</span></p>
+                <p><strong>Data de Entrega:</strong> <span class="dataEntrega">2024-11-10</span></p>
+            </div>
+
+            <div class="encomenda">
+                <p><strong>Nome do Morador:</strong> <span class="nomeMorador">Maria Oliveira</span></p>
+                <p><strong>Apartamento:</strong> <span class="apartamento">305</span></p>
+                <p><strong>Data de Entrega:</strong> <span class="dataEntrega">2024-11-12</span></p>
+            </div>
+
+            <div class="encomenda">
+                <p><strong>Nome do Morador:</strong> <span class="nomeMorador">Carlos Souza</span></p>
+                <p><strong>Apartamento:</strong> <span class="apartamento">210</span></p>
+                <p><strong>Data de Entrega:</strong> <span class="dataEntrega">2024-11-14</span></p>
+            </div>
+
+            <!-- Adicione mais encomendas conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
