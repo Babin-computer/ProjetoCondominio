@@ -10,40 +10,28 @@ import java.util.List;
  */
 public class listagemEncomenda {
     
-int id_encomenda;
-    String dataEntrega,nome;
+    int id;
+    String dataEntrega,nome, apartamento;
     
+   public listagemEncomenda(){}
     
-    
-    public listagemEncomenda(){
+    public listagemEncomenda(int id, String dataEncomenda, String nome, 
+            String apartamento){
       this.dataEntrega=dataEntrega;
       this.nome=nome;
-      this.id_encomenda=id_encomenda;
+      this.id=id;
+      this.apartamento=apartamento;
         
         
     }
-     private static final List<listagemEncomenda> lista = new ArrayList<>();
-
-      // Métodos para acessarmos a lista e adicionarmos novos itens
-      public static List<listagemEncomenda> Listar() {
-          return lista;
-      }
-      
-      public static void Adicionar(listagemEncomenda enc) {
-          lista.add(enc);
-      }
-      
-      public static void atualizar(int id, listagemEncomenda pac){
-        lista.set(id, pac);
-        
-    }
+   
 
     public int getId_encomenda() {
-        return id_encomenda;
+        return id;
     }
 
-    public void setId_encomenda(int id_encomenda) {
-        this.id_encomenda = id_encomenda;
+    public void setId_encomenda(int id) {
+        this.id=id;
     }
 
     public String getDataEntrega() {
